@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TURKMC | Minecraft Türkiye Topluluğu</title>
+  <meta name="description" content="TURKMC - Minecraft tutkunlarının buluşma noktası. PvP, modlar, resourcepackler, etkinlikler ve daha fazlası.">
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{
+      font-family:Arial,Helvetica,sans-serif;
+      background:#080b10;color:#fff;line-height:1.6;
+      overflow-x:hidden;
+    }
+    body:before{
+      content:"";position:fixed;inset:0;z-index:-2;
+      background:
+        radial-gradient(circle at 20% 10%,rgba(255,166,0,.16),transparent 30%),
+        radial-gradient(circle at 85% 20%,rgba(0,210,130,.12),transparent 28%),
+        linear-gradient(135deg,#080b10,#10151c 55%,#080b10);
+    }
+    body:after{
+      content:"";position:fixed;inset:0;z-index:-1;opacity:.08;
+      background-image:linear-gradient(45deg,#fff 1px,transparent 1px);
+      background-size:32px 32px;pointer-events:none;
+    }
+    nav{
+      width:min(1100px,92%);margin:22px auto 0;padding:14px 18px;
+      display:flex;align-items:center;justify-content:space-between;
+      border:1px solid #ffffff16;border-radius:18px;
+      background:#0c1016cc;backdrop-filter:blur(14px);
+      position:sticky;top:14px;z-index:10;
+    }
+    .logo{font-weight:900;font-size:23px;letter-spacing:2px}
+    .logo span{color:#ffb000}
+    nav a{color:#cfd5dc;text-decoration:none;margin-left:22px;font-size:14px}
+    nav a:hover{color:#fff}
+    .hero{width:min(1100px,92%);margin:95px auto 80px;text-align:center}
+    .badge{
+      display:inline-block;padding:8px 14px;border-radius:999px;
+      border:1px solid #ffb00055;background:#ffb00012;color:#ffc44d;
+      font-size:13px;font-weight:700;margin-bottom:22px
+    }
+    h1{font-size:clamp(54px,11vw,110px);line-height:.9;letter-spacing:5px;font-weight:1000}
+    h1 span{color:#ffb000;text-shadow:0 0 35px #ffb00030}
+    .hero p{max-width:650px;margin:28px auto;color:#aeb7c2;font-size:18px}
+    .buttons{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:30px}
+    .btn{
+      display:inline-block;text-decoration:none;padding:13px 22px;border-radius:12px;
+      font-weight:800;border:1px solid #ffffff18;color:#fff;background:#151b23;
+      transition:.2s
+    }
+    .btn:hover{transform:translateY(-2px);border-color:#ffffff38}
+    .primary{background:#ffad00;color:#111;border-color:#ffad00}
+    section{width:min(1100px,92%);margin:0 auto 95px}
+    .title{text-align:center;margin-bottom:32px}
+    .title h2{font-size:34px}
+    .title p{color:#89939f;margin-top:7px}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .card{
+      padding:25px;border:1px solid #ffffff10;border-radius:18px;
+      background:#10151dcc;backdrop-filter:blur(10px);
+      transition:.2s
+    }
+    .card:hover{transform:translateY(-4px);border-color:#ffb00044}
+    .icon{font-size:31px;margin-bottom:10px}
+    .card h3{margin-bottom:7px}.card p{color:#929daa;font-size:14px}
+    .discord{
+      text-align:center;padding:45px 25px;border-radius:22px;
+      border:1px solid #ffb00035;background:linear-gradient(135deg,#151b22,#11161c);
+    }
+    .discord h2{font-size:32px;margin-bottom:10px}
+    .discord p{color:#9da6b0;margin-bottom:22px}
+    footer{text-align:center;padding:35px;color:#68727e;font-size:13px;border-top:1px solid #ffffff0b}
+    @media(max-width:750px){
+      nav{position:relative;top:0} nav div:last-child{display:none}
+      .hero{margin-top:70px}.grid{grid-template-columns:1fr}
+      h1{letter-spacing:2px}.hero p{font-size:16px}
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">TURK<span>MC</span></div>
+    <div>
+      <a href="#ozellikler">Özellikler</a>
+      <a href="#topluluk">Topluluk</a>
+      <a href="#discord">Discord</a>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <div class="badge">🇹🇷 MINECRAFT TÜRKİYE TOPLULUĞU</div>
+      <h1>TURK<span>MC</span></h1>
+      <p>Minecraft tutkunlarının buluşma noktası. PvP, modlar, resourcepackler, etkinlikler ve aktif bir topluluk tek yerde.</p>
+      <div class="buttons">
+        <a class="btn primary" href="#discord">Discord'a Katıl</a>
+        <a class="btn" href="#ozellikler">Keşfet →</a>
+      </div>
+    </section>
+
+    <section id="ozellikler">
+      <div class="title">
+        <h2>Neler Var?</h2>
+        <p>Minecraft hakkında ihtiyacın olan her şey.</p>
+      </div>
+      <div class="grid">
+        <div class="card"><div class="icon">⚔️</div><h3>Tier & PvP</h3><p>Kitler, PvP içerikleri, detaylı rehberler ve rekabetçi Minecraft dünyası.</p></div>
+        <div class="card"><div class="icon">📦</div><h3>ResourcePack</h3><p>1.8 ve 1.9 PvP için kullanışlı pack önerileri ve paylaşımları.</p></div>
+        <div class="card"><div class="icon">🛠️</div><h3>Rehber & Modlar</h3><p>Mod önerileri, optimizasyon ve oyun deneyimini geliştirecek içerikler.</p></div>
+        <div class="card"><div class="icon">📢</div><h3>Tanıtım & Reklam</h3><p>Sunucunu, projenizi veya Minecraft içeriklerinizi topluluğa duyurun.</p></div>
+        <div class="card"><div class="icon">🎁</div><h3>Etkinlikler</h3><p>Çekilişler, turnuvalar ve topluluk etkinlikleriyle eğlenceyi artır.</p></div>
+        <div class="card"><div class="icon">💬</div><h3>Sohbet</h3><p>Aktif, samimi ve kaliteli bir Minecraft topluluğunda yeni insanlarla tanış.</p></div>
+      </div>
+    </section>
+
+    <section id="topluluk">
+      <div class="discord">
+        <h2>Topluluğa Katıl</h2>
+        <p>Güncel paylaşımlar, etkinlikler, çekilişler ve sohbet için Discord sunucumuza gel.</p>
+        <a class="btn primary" href="#" onclick="alert('Buraya Discord davet linkini ekleyeceğiz!');return false;">Discord'a Katıl 🚀</a>
+      </div>
+    </section>
+
+    <section id="discord">
+      <div class="title">
+        <h2>TURKMC</h2>
+        <p>Yakında sunucu durumu, oyuncu sayısı ve daha fazla özellik burada olacak.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>© 2026 TURKMC • Minecraft Türkiye Topluluğu</footer>
+</body>
+</html>
